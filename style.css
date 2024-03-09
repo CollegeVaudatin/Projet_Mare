@@ -1,0 +1,71 @@
+header {
+  background-color: #6df79f;
+  color: #172bd3;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style pour la navigation */
+nav {
+  background-color: #555;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+a:hover {
+  background-color: gold;
+}
+
+/* Style pour la section principale */
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Style pour la barre latérale (aside) */
+aside {
+  width: 25%;
+  background-color: #6db8f7;
+  padding: 10px;
+}
+
+/* Style pour le pied de page */
+footer {
+  background-color: #6df79f;
+  color: #172bd3;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style pour le body, pour une meilleure lisibilité */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style pour rendre la page plus réactive (responsive) */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+section {
+    order: 2; /* Change l'ordre de la section dans le flux de colonnes */
+    flex: 1; /* La section prend 100% de l'espace disponible en mode colonne */
+  }
+
+ 
+  aside {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
